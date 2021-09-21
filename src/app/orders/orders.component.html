@@ -1,0 +1,29 @@
+<div class= "row">
+    <div class="col-xs-4 col-md-4">
+      <h2>Account Numbers</h2>
+      <div class="list-group">
+        <a [routerLink]="['/orders', data.accountNumber]"    
+         href="#"      
+         class="list-group-item"   
+         *ngFor="let data of accounts">
+            {{ data.accountNumber }} &nbsp;&nbsp;&nbsp;&nbsp;
+        </a>
+      </div>
+    </div>
+  </div>
+<h2>Account Details</h2>
+<div class="row">
+  <div class="col-xs-6">
+    <label>Account Number: </label> {{ account.accountNumber }}
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-6">
+    <label>Account Type: </label> {{ account.type }}
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-6">
+    <label>Balance: </label> {{account.balance}}
+  </div>
+</div>
